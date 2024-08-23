@@ -1,3 +1,5 @@
+<img src="craiyon_150823_vibrant_oil_painting_art_of_a_snapdragon_flower_in_a_rainbow_of_colours.png" height="270pt" align="bottom">
+
 ## SnapSpectrum Usage Documentation
 
 ### Overview
