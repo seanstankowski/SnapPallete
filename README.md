@@ -30,15 +30,15 @@ To ensure accurate results, execute the SnapSpectrum script in the directory con
 
 ### Flags and Options
 - `-d`, `--diameter`: Specifies a multiplier for the default circle diameter used in image analysis. This flag is optional. If omitted, the script uses a default multiplier of `1.0` (default size).
-- `-c`, `--circles`: Specifies teh number of circles to be placed 
+- `-c`, `--circles`: Specifies teh number of circles to be placed. This flag is optional. If omitted, the script uses a default number of circles which is 6. A number less than 6 can be specified. 
 #### Examples
 - To run the script with the default circle size:
 
       python SnapSpectrum.py filename.jpg
 
-- To run the script with half the default circle size:
+- To run the script with half the default circle size and only 3 circles instead of 6:
 
-      python SnapSpectrum.py -d 0.5 filename.jpg
+      python SnapSpectrum.py -d 0.5 -c 3 filename.jpg 
 
 - To double the circle size used in the analysis:
 
