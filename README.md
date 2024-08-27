@@ -3,7 +3,7 @@
 ## SnapSpectrum Usage Documentation
 
 ### Overview
-**SnapSpectrum** is a specialized script designed for the analysis of color variations in snapdragon flowers from the genus *Antirrhinum*. Utilizing advanced image processing techniques, SnapSpectrum quantifies different color metrics and saves the results in a CSV format for further analysis.
+**SnapSpectrum** is a python script designed for the analysis of color variations in snapdragon flowers from the genus *Antirrhinum*. Its quantifies different color metrics and saves the results in a CSV format for further analysis. It would likely be useful for analysing the coloour of other organisms. 
 
 ### Requirements
 - Python 3.x
@@ -30,7 +30,8 @@ To ensure accurate results, execute the SnapSpectrum script in the directory con
 
 ### Flags and Options
 - `-d`, `--diameter`: Specifies a multiplier for the default circle diameter used in image analysis. This flag is optional. If omitted, the script uses a default multiplier of `1.0` (default size).
-- `-c`, `--circles`: Specifies teh number of circles to be placed. This flag is optional. If omitted, the script uses a default number of circles which is 6. A number less than 6 can be specified. 
+- `-c`, `--circles`: Specifies teh number of circles to be placed. This flag is optional. If omitted, the script uses a default number of circles which is 6. A number less than 6 can be specified.
+- `-m`, `--manual`: Allows the user to manually draw any number circles of varying sizes by mouse dragging
 #### Examples
 - To run the script with the default circle size:
 
@@ -44,9 +45,13 @@ To ensure accurate results, execute the SnapSpectrum script in the directory con
 
       python SnapSpectrum.py -d 2.0 filename.jpg
 
+- manually add any number of circles :
+
+      python SnapSpectrum.py -m 2.0 filename.jpg
+
 ### Output
 - **CSV File**: After processing, the script outputs a CSV file named `color_analysis_results.csv` in the same directory. This file includes comprehensive details such as the image name, circle identifier, average hue, standard deviation of hue, average saturation, standard deviation of saturation, and average brightness and standard deviation of brightness for each analyzed circle. Additional columns provide the percentage of different colors detected within each circle, based on predefined color ranges.
 
 ### Additional Information
-- **Color Ranges**: Color ranges used for analysis are predefined within the script and include common colors observed in snapdragon flowers such as red, yellow, magenta, pink, white, and orange.
-- **Circle Adjustment**: Users can modify the radius of circles used for color analysis through the `-d` flag, allowing flexibility based on the size and scale of flower images.
+- **Color Ranges**: Color ranges used for analysis are predefined within the script and include common colors observed in snapdragon flowers such as red, yellow, magenta, pink, white, and orange based on the HSV projection. These values can be edited in the script and addiaitonal colours can be added if needed
+
