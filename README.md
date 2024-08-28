@@ -30,8 +30,8 @@ To ensure accurate results, execute the SnapSpectrum script in the directory con
 
 ### Flags and Options
 - `-d`, `--diameter`: Specifies a multiplier for the default circle diameter used in image analysis. This flag is optional. If omitted, the script uses a default multiplier of `1.0` (default size).
-- `-c`, `--circles`: Specifies teh number of circles to be placed. This flag is optional. If omitted, the script uses a default number of circles which is 6. A number less than 6 can be specified.
-- `-m`, `--manual`: Allows the user to manually draw any number circles of varying sizes by mouse dragging
+- `-c`, `--circles`: Specifies the number of circles to be placed. This flag is optional. If omitted, the script uses a default number of circles which is 6. A number less than 6 can be specified.
+- `-m`, `--manual`: Manual mode allows the user to manually draw any number circles of varying sizes by mouse dragging. Flags -d and -c have no function in manual mode. 
 #### Examples
 - To run the script with the default circle size:
 
