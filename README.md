@@ -1,6 +1,6 @@
 <img src="craiyon_150823_vibrant_oil_painting_art_of_a_snapdragon_flower_in_a_rainbow_of_colours.png" height="270pt" align="bottom">
 
-## SnapSpectrum Usage Documentation
+## SnapPalette Usage Documentation
 
 ### Overview
 **SnapPalette** is a python script designed for the analysis of color variations in snapdragon flowers from the genus *Antirrhinum*. Its quantifies different color metrics and saves the results in a CSV format for further analysis. It would likely be useful for analysing the coloour of other organisms. 
