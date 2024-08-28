@@ -3,7 +3,7 @@
 ## SnapSpectrum Usage Documentation
 
 ### Overview
-**SnapSpectrum** is a python script designed for the analysis of color variations in snapdragon flowers from the genus *Antirrhinum*. Its quantifies different color metrics and saves the results in a CSV format for further analysis. It would likely be useful for analysing the coloour of other organisms. 
+**SnapPalette** is a python script designed for the analysis of color variations in snapdragon flowers from the genus *Antirrhinum*. Its quantifies different color metrics and saves the results in a CSV format for further analysis. It would likely be useful for analysing the coloour of other organisms. 
 
 ### Requirements
 - Python 3.x
@@ -17,7 +17,7 @@ Ensure Python is installed on your system along with the necessary libraries. Yo
     pip install opencv-python numpy matplotlib
 
 ### Script Execution
-To ensure accurate results, execute the SnapSpectrum script in the directory containing the target images. Results are automatically saved in the same directory as a CSV file.
+To ensure accurate results, execute the SnapPalette script in the directory containing the target images. Results are automatically saved in the same directory as a CSV file.
 
 #### Steps:
 1. Place all images in a single directory.
@@ -26,7 +26,7 @@ To ensure accurate results, execute the SnapSpectrum script in the directory con
 
 #### Basic Command
 
-    python SnapSpectrum.py filename.jpg <.png also works>
+    python SnapPalette.py filename.jpg <.png also works>
 
 ### Flags and Options
 - `-d`, `--diameter`: Specifies a multiplier for the default circle diameter used in image analysis. This flag is optional. If omitted, the script uses a default multiplier of `1.0` (default size).
@@ -35,19 +35,19 @@ To ensure accurate results, execute the SnapSpectrum script in the directory con
 #### Examples
 - To run the script with the default circle size:
 
-      python SnapSpectrum.py filename.jpg
+      python SnapPalette.py filename.jpg
 
 - To run the script with half the default circle size and only 3 circles instead of 6:
 
-      python SnapSpectrum.py -d 0.5 -c 3 filename.jpg 
+      python SnapPalette.py -d 0.5 -c 3 filename.jpg 
 
 - To double the circle size used in the analysis:
 
-      python SnapSpectrum.py -d 2.0 filename.jpg
+      python SnapPalette.py -d 2.0 filename.jpg
 
 - manually add any number of circles :
 
-      python SnapSpectrum.py -m 2.0 filename.jpg
+      python SnapPalette.py -m 2.0 filename.jpg
 
 ### Output
 - **CSV File**: After processing, the script outputs a CSV file named `color_analysis_results.csv` in the same directory. This file includes comprehensive details such as the image name, circle identifier, average hue, standard deviation of hue, average saturation, standard deviation of saturation, and average brightness and standard deviation of brightness for each analyzed circle. Additional columns provide the percentage of different colors detected within each circle, based on predefined color ranges.
