@@ -26,6 +26,7 @@ To ensure accurate results, execute the SnapPalette script in the directory cont
 
 #### Basic Command
 The minimum information needed to run the program is to call python, refrence the script, and enter the name of the photo. .png and .jpg formats have been tested and work fine.
+
     python SnapPalette.py filename.jpg 
 
 ### Flags and Options
