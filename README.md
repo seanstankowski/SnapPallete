@@ -25,8 +25,8 @@ To ensure accurate results, execute the SnapPalette script in the directory cont
 3. Run the script using the command below.
 
 #### Basic Command
-
-    python SnapPalette.py filename.jpg <.png also works>
+The minimum information needed to run the program is to call python, refrence the script, and enter the name of the photo. .png and .jpg formats have been tested and work fine.
+    python SnapPalette.py filename.jpg 
 
 ### Flags and Options
 - `-d`, `--diameter`: Specifies a multiplier for the default circle diameter used in image analysis. This flag is optional. If omitted, the script uses a default multiplier of `1.0` (default size).
