@@ -54,7 +54,7 @@ The minimum information needed to run the program is to call python, refrence th
 - **CSV File**: After processing, the script outputs a CSV file named `color_analysis_results.csv` in the same directory. This file includes comprehensive details such as the image name, circle identifier, average hue, standard deviation of hue, average saturation, standard deviation of saturation, and average brightness and standard deviation of brightness for each analyzed circle. Additional columns provide the percentage of different colors detected within each circle, based on predefined color ranges.
 
 ### Processing the output:
-- the program outputs the results for each processed circle on a new line of the csv file. If multiple circles are analysed for each photo, it may be more desireable to have all the data one one line, with headers specifying the charateristic and circle analysed. This can be done using the script aggregate.py. This will also strip out percentage signs from the data. The -i and -o flags specifcy the input and output files. The default input will be color_analysis_results.csv, as this is name of the file generates by SnapPalette.
+- the program outputs the results for each processed circle on a new line of the csv file. If multiple circles are analysed for each photo, it may be more desireable to have all the data one one line, with headers specifying the charateristic and circle analysed. This can be done using the script aggregate.py. This will also strip out percentage signs from the data. The '-i' and '-o' flags specifcy the input and output files. The default input will be color_analysis_results.csv, as this is name of the file generates by SnapPalette.
 
       python aggregate.py -i color_analysis_results.csv -o out.csv
 
