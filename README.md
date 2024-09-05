@@ -50,6 +50,9 @@ The minimum information needed to run the program is to call python, refrence th
 
       python SnapPalette.py -m 2.0 filename.jpg
 
+#### collecting data
+Add circles to the image by left mouse clicking (default) and draging (manual mode). When adding more than 1 circle, the goal is to usually add these in roughly the same place, representing homologous parts of the image. Sometimes its not possibel to add a circle, because the flower is damaged. If this is the case, right clicking skips that cricle, and records 'NA' in the ouptu file. 
+
 ### Output
 - **CSV File**: After processing, the script outputs a CSV file named `color_analysis_results.csv` in the same directory. This file includes comprehensive details such as the image name, circle identifier, average hue, standard deviation of hue, average saturation, standard deviation of saturation, and average brightness and standard deviation of brightness for each analyzed circle. Additional columns provide the percentage of different colors detected within each circle, based on predefined color ranges.
 
