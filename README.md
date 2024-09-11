@@ -51,10 +51,13 @@ The minimum information needed to run the program is to call python, refrence th
       python SnapPalette.py -m 2.0 filename.jpg
 
 ### Collecting data
-Add circles to the image by left mouse clicking (default) and draging (manual mode). When adding more than 1 circle, the goal is to usually add these in roughly the same place, representing homologous parts of the image. Sometimes its not possibel to add a circle, because the flower is damaged. If this is the case, right clicking skips that cricle, and records 'NA' in the ouptu file. 
+- Add circles to the image by left mouse clicking (default) and draging (manual mode).
+- When adding more than 1 circle, the goal is to usually add these in roughly the same place, representing homologous parts of the image. Sometimes its not possibel to add a circle, because the flower is damaged. If this is the case, right clicking skips that cricle, and records 'NA' in the ouptu file.
+- if you are not happy with the placement of the last circle, you can delete this with the escape key
+- Press enter once confirm the palcemnt of the cicles, and then a second time to record the data
 
 ### Output
-- **CSV File**: After processing, the script outputs a CSV file named `color_analysis_results.csv` in the same directory. This file includes comprehensive details such as the image name, circle identifier, average hue, standard deviation of hue, average saturation, standard deviation of saturation, and average brightness and standard deviation of brightness for each analyzed circle. Additional columns provide the percentage of different colors detected within each circle, based on predefined color ranges.
+- **CSV File**: data are output to a CSV file named `color_analysis_results.csv` in the same directory. This file includes comprehensive details such as the image name, circle identifier, average hue, standard deviation of hue, average saturation, standard deviation of saturation, and average brightness and standard deviation of brightness for each analyzed circle. Additional columns provide the percentage of different colors detected within each circle, based on predefined color ranges.
 
 ### Processing the output:
 - the program outputs the results for each processed circle on a new line of the csv file. If multiple circles are analysed for each photo, it may be more desireable to have all the data one one line, with headers specifying the charateristic and circle analysed. This can be done using the script aggregate.py. This will also strip out percentage signs from the data. The `-i` and `-o` flags specifcy the input and output files. The default input will be color_analysis_results.csv, as this is name of the file generates by SnapPalette.
