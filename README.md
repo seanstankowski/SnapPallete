@@ -44,9 +44,9 @@ The minimum information needed to run the program is to call python, refrence th
 
       python SnapPalette.py -d 0.5 -c 3 filename.jpg 
 
-- To double the circle size used in the analysis:
+- To double the circle size used in the analysis and project the image to half of the size:
 
-      python SnapPalette.py -d 2.0 filename.jpg
+      python SnapPalette.py -d 2.0 -s 0.5 filename.jpg
 
 - manually add any number of circles :
 
