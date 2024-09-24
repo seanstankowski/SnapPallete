@@ -32,7 +32,9 @@ The minimum information needed to run the program is to call python, refrence th
 ### Flags and Options
 - `-d`, `--diameter`: Specifies a multiplier for the default circle diameter used in image analysis. This flag is optional. If omitted, the script uses a default multiplier of `1.0` (default size).
 - `-c`, `--circles`: Specifies the number of circles to be placed. This flag is optional. If omitted, the script uses a default number of circles which is 6. A number less than 6 can be specified.
-- `-m`, `--manual`: Manual mode allows the user to manually draw any number circles of varying sizes by mouse dragging. Flags -d and -c have no function in manual mode. 
+- `-m`, `--manual`: Manual mode allows the user to manually draw any number circles of varying sizes by mouse dragging. Flags -d and -c have no function in manual mode.
+- `-s`,`--scale`: a multiplier that scale teh image display. For example, -s 0.5 displays the image at half the size
+
 #### Examples
 - To run the script with the default circle size:
 
